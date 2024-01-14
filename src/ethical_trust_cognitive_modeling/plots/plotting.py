@@ -21,14 +21,14 @@ def plot_emotional_data(opinions_over_time, avg_trust_over_time, emotions_over_t
     ax1.set_title("Average Opinions Over Time")
     ax1.set_xlabel("Iterations")
     ax1.set_ylabel("Average Opinion")
-    fig1.savefig("opinions_over_time.pdf")
+    fig1.savefig("src/ethical_trust_cognitive_modeling/simulation/opinions_over_time.pdf")
 
     fig2, ax2 = plt.subplots(figsize=fig_size)
     ax2.plot(avg_trust_over_time, color='r')
     ax2.set_title("Average Trust Over Time")
     ax2.set_xlabel("Iterations")
     ax2.set_ylabel("Average Trust")
-    fig2.savefig("avg_trust_over_time.pdf")
+    fig2.savefig("src/ethical_trust_cognitive_modeling/simulation/avg_trust_over_time.pdf")
 
     fig3, ax3 = plt.subplots(figsize=fig_size)
     for emotion, values in emotions_over_time.items():
@@ -37,7 +37,7 @@ def plot_emotional_data(opinions_over_time, avg_trust_over_time, emotions_over_t
     ax3.set_xlabel("Iterations")
     ax3.set_ylabel("Average Emotion")
     ax3.legend(loc="upper right")
-    fig3.savefig("emotions_over_time.pdf")
+    fig3.savefig("src/ethical_trust_cognitive_modeling/simulation/emotions_over_time.pdf")
     plt.show()
 
 def plot_friendship_network(agents):
@@ -59,7 +59,7 @@ def plot_friendship_network(agents):
     plt.title("Friendship Network")
     plt.axis('off')
     plt.tight_layout()
-    plt.savefig("friendship_network.pdf")
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/friendship_network.pdf")
     plt.show()
 
 def plot_opinions_and_trust_with_events(opinions_over_time, trust_over_time, events):
@@ -84,7 +84,7 @@ def plot_opinions_and_trust_with_events(opinions_over_time, trust_over_time, eve
     plt.title('Average Opinions and Trust Over Time with Event Annotations')
     fig.tight_layout()
     ax1.grid(True)
-    plt.savefig("opinions_and_trust_with_events.pdf")
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/opinions_and_trust_with_events.pdf")
     plt.show()
 
 def plot_emotion_heatmap_over_time(emotions_over_time):
@@ -124,7 +124,7 @@ def plot_emotion_heatmap_over_time(emotions_over_time):
     
     # Save the plot as a PDF
     plt.tight_layout()
-    plt.savefig("emotion_heatmap_over_time.pdf")
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/emotion_heatmap_over_time.pdf")
 
     # Show the plot
     plt.show()
@@ -145,7 +145,7 @@ def plot_trust_heatmap_at_iteration(agents, specific_iteration):
     plt.xlabel('Agent ID')
     plt.ylabel('Agent ID')
     plt.tight_layout()
-    plt.savefig(f"trust_heatmap_iteration_{specific_iteration}.pdf")
+    plt.savefig(f"src/ethical_trust_cognitive_modeling/simulation/trust_heatmap_iteration_{specific_iteration}.pdf")
     plt.show()
 
 def plot_combined_networks(agents):
@@ -181,7 +181,7 @@ def plot_combined_networks(agents):
     nx.draw_networkx_labels(G, pos, labels, font_size=9, font_weight='bold')
     ax1.set_title("Friendship Network")
     plt.axis('off')
-    plt.savefig("friendship_network.pdf")
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/friendship_network.pdf")
     plt.show()
 
     # Plot 2: Influence Network
@@ -200,7 +200,7 @@ def plot_combined_networks(agents):
     nx.draw_networkx_labels(G, pos, font_size=8, font_family='sans-serif')
     ax2.set_title('Social Network Diagram of Friendship and Influence')
     plt.axis('off')
-    plt.savefig("influence_network.pdf")
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/influence_network.pdf")
     plt.show()
 
 def plot_resource_allocation_map(allocation_records, iteration, area_needs, ax=None):
@@ -233,7 +233,7 @@ def plot_resource_allocation_map(allocation_records, iteration, area_needs, ax=N
 
     # Save the plot as a PDF
     plt.tight_layout()
-    plt.savefig("resource_allocation_map_iteration_{}.pdf".format(iteration))
+    plt.savefig("src/ethical_trust_cognitive_modeling/simulation/resource_allocation_map_iteration_{}.pdf".format(iteration))
 
     # Show the plot
     plt.show()
