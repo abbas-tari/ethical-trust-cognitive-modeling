@@ -21,4 +21,5 @@ cd ethical-trust-cognitive-modeling
 pdm install
 pdm run src/ethical_trust_cognitive_modeling/simulation/simulation.py
 ```
+Then you can find plots in simulation folder (`src/ethical_trust_cognitive_modeling/simulation`)
 
