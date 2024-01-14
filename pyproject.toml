@@ -1,0 +1,27 @@
+[project]
+name = "ethical-trust-cognitive-modeling"
+version = "0.1.0"
+description = "Trust from Ethical Point of View: Exploring Dynamics Through Multiagent-Driven Cognitive Modeling"
+authors = [
+    {name = "Abbas Tariverdi (fmamm)", email = "tariverdi.abbas@gmail.com/abbasta@abbasta.com"},
+]
+dependencies = [
+    "fonttools",
+    "matplotlib",
+    "networkx",
+    "numpy",
+    "pandas",
+    "Pillow",
+    "seaborn",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+packages = [
+    { include = "src/ethical_trust_cognitive_modeling", from = "src" }
+]
