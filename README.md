@@ -1,4 +1,4 @@
-# ethical-trust-cognitive-modeling
+# Trust from Ethical Point of View: Exploring Dynamics Through Multiagent-Driven Cognitive Modeling
 
 ## Installation and Setup
 ### Prerequisites
